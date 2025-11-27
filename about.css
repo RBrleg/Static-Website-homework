@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background: url(Gebura_ep1.png) no-repeat;
+    justify-content: center;
+    background-position: cover;
+    align-items: center;
+}
+
+.wrapper {
+    justify-items: center;
+    display: flex;
+    align-items: center;
+}
+
+.frame{
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: lab(74.99% 24.26 74.59 / 0.664);
+    font-size: 1.5em;
+    margin: auto;
+    width: 100%;                /* adjust as needed */               /* adjust as needed */
+    padding: 10px;               /* inner spacing */
+    border: 50px solid transparent;
+    border-image-source: url("1000\(1\).png");
+    border-image-slice: 150;     /* adjust based on image */
+    border-image-width: 40px;
+    border-image-outset: 0;
+    border-image-repeat: round; /* try round or repeat if desired */
+    box-sizing: border-box;
+    margin: 100px;
+}
+
+.frame{
+    color: #000000;
+}
+
+.frame h1{
+    color: #ffffff;
+
+}
+.frame h2{
+    color: #ffffff;
+
+}
+.frame p{
+    color: #ffffff;
+
+}
+.frame .gg{
+    color: #000000;
+
+}
+
+.meleg ul {
+    list-style-type: none;
+    background-color: lab(39.72% 32.41 42.97 / 0.686);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    border: 2px solid #FDDC5C;
+    border-radius: 10px;
+}
+
+
+
+.meleg a {
+    color: black;
+    text-decoration: none;
+    padding: 25px;
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+    
+}
+
+
+.meleg a:hover {
+    background-color:  #fd9c5ca2;
+} 
+
+.meleg li {
+    float: left;
+}
+
+#roland{
+    float: left;
+    margin-right: 15px;
+
+}
+
+.meleg ul .menu .dropdown li{
+    display: block;
+}
+
+.meleg ul .menu .dropdown{
+    width: 20%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+.meleg ul .menu:hover ul.dropdown{
+    display: block;
+}
+
+.meleg ul .menu .dropdown li{
+    float: none;
+}
+
+.meleg ul .menu .wa a{
+    color: rgb(0, 255, 0);
+    font-weight: 500;
+}
+.meleg ul .menu .telepon a{
+    color: rgb(0, 96, 126);
+    font-weight: 500;
+}
+.meleg ul .menu .ig a{
+    color: rgb(255, 14, 163);
+    font-weight: 500;
+}
+
+@media (max-width:600px) {
+
+    body{
+        background-position: cover;
+    }
+
+    .frame{
+    margin: 0;
+    width: 100%;
+    height: auto;
+    border: auto solid transparent;
+    border-image-source: url("1000\(1\).png") no-reapet;
+    border-image-slice: auto;  
+    border-image-width: auto;
+    border-image-outset: 0;
+    border-image-repeat: round; 
+    box-sizing: border-box;
+}
+
+    .meleg a{
+        font-size: .9em;
+    }
+
+}

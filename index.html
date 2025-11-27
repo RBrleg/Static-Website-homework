@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://cdn.boxicons.com/3.0.3/fonts/basic/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <script>
+        function validateForm(event) {
+            event.preventDefault(); // Mencegah form dari pengiriman otomatis    //i copy paste tsssssssssssssssssssssssssssssssssssssss 
+                                                                                    //Absen 14
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // Validasi sederhana (misalnya username dan password harus "admin")
+            if (username === 'admin' && password === 'admin') {
+                window.location.href = 'dashboard.html'; // Arahkan ke halaman dashboard
+            } else {
+                alert('Username atau password salah. Silakan coba lagi.'); // Peringatan jika salah
+            }
+            function logout() {
+      // Misalnya di sini kamu bisa hapus data session (kalau pakai)
+      // Lalu redirect ke halaman utama
+      window.location.href = "index.html"; // Ganti dengan halaman utama kamu
+    }  
+        }
+    </script>
+  <div class="wrapper">
+    <form onsubmit="validateForm(event)">
+    <form action="dashboard.html" method="POST">
+      <h1>Login</h1>
+
+      <div class="input-box">
+        <input type="text" placeholder="Username" required id="username">
+        <i class="bx bx-user" id="user"></i>
+      </div>
+
+      <div class="input-box">
+        <input type="password" placeholder="Password" required id="password">
+        <i class='bx  bx-lock' id="lock"></i> 
+      </div>
+
+      <div class="remember-me">
+        <label><input type="checkbox"> Remember me</label>
+      </div> 
+
+      <button type="submit" class="btn">Login</button>
+    </form>
+  </div>
+
+</body>
+</html>
